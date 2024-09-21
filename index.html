@@ -30,10 +30,18 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <style>
-        font-family: "Inter", sans-serif;
-        font-family: "Raleway", sans-serif;
-    </style> -->
+    <style>
+      /*font-family: "Inter", sans-serif;
+        font-family: "Raleway", sans-serif;*/
+      .bg-banner-img {
+        background-image: url("images/banner.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: overlay;
+      }
+    </style>
     <script>
       tailwind.config = {
         theme: {
@@ -56,15 +64,15 @@
       };
     </script>
   </head>
-  <body>
+  <body class="font-Raleway">
     <header class="w-11/12 lg:w-4/5 mx-auto mt-10">
       <nav class="flex justify-between items-center">
         <div>
-          <h2 class="text-2xl lg:text-4xl font-extrabold">Bus-Ticket</h2>
+          <h2 class="text-2xl lg:text-3xl font-extrabold">Bus-Ticket</h2>
         </div>
         <div class="hidden lg:block">
           <ul
-            class="lg:flex lg:justify-between lg:items-center lg:text-2xl lg:font-medium lg:gap-16 text-[#030712B3]"
+            class="lg:flex lg:justify-between lg:items-center lg:text-lg lg:font-medium lg:gap-16 text-[#030712B3]"
           >
             <li class="hover:text-primary">Home</li>
             <li class="hover:text-primary">About</li>
@@ -73,10 +81,10 @@
           </ul>
         </div>
         <div
-          class="w-24 lg:w-36 justify-center items-center flex py-3 gap-3 text-base lg:text-2xl bg-[#1DD1001A] text-primary font-bold border border-primary rounded-xl"
+          class="w-24 lg:w-32 justify-center items-center flex py-3 gap-3 text-base lg:text-lg bg-[#1DD1001A] text-primary font-bold border border-primary rounded-xl"
         >
           <h4>Bus</h4>
-          <img class="lg:w-8" src="images/bus-icon.png" alt="Bus Icon" />
+          <img class="lg:w-7" src="images/bus-icon.png" alt="Bus Icon" />
         </div>
         <div class="block lg:hidden text-3xl">
           <i id="bar-icon" class="block lg:block fa-solid fa-bars"></i>
@@ -94,6 +102,30 @@
           </ul>
         </div>
       </nav>
+      <!-- Banner Section Code Start Here -->
+      <section
+        class="bg-banner-img rounded-xl mt-6 flex flex-col justify-center items-center py-32 text-center"
+      >
+        <h1
+          class="lg:w-6/12 text-white text-4xl lg:text-5xl font-extrabold leading-loose mb-5"
+        >
+          End-to-End Travel with
+          <span class="text-primary">Green Line Paribahan</span>
+        </h1>
+        <p
+          class="w-full lg:w-2/3 mx-auto font-Inter text-white text-lg font-normal mb-7"
+        >
+          Green Line Paribahan is apparently a family owned transport company
+          specializing in transportation of passenger bus services since 1990.
+          our transport system encompasses all reachable areas of Bangladesh
+        </p>
+        <a
+          class="bg-primary text-secondary text-xl font-bold px-6 py-4 rounded-lg"
+          href=""
+          >Buy Ticket</a
+        >
+      </section>
+      <!-- Banner Section Code End Here -->
     </header>
     <main></main>
     <footer>
