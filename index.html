@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,5 +56,51 @@
       };
     </script>
   </head>
-  <body></body>
+  <body>
+    <header class="w-11/12 lg:w-4/5 mx-auto mt-10">
+      <nav class="flex justify-between items-center">
+        <div>
+          <h2 class="text-2xl lg:text-4xl font-extrabold">Bus-Ticket</h2>
+        </div>
+        <div class="hidden lg:block">
+          <ul
+            class="lg:flex lg:justify-between lg:items-center lg:text-2xl lg:font-medium lg:gap-16 text-[#030712B3]"
+          >
+            <li class="hover:text-primary">Home</li>
+            <li class="hover:text-primary">About</li>
+            <li class="hover:text-primary">Destination</li>
+            <li class="hover:text-primary">Search</li>
+          </ul>
+        </div>
+        <div
+          class="w-24 lg:w-36 justify-center items-center flex py-3 gap-3 text-base lg:text-2xl bg-[#1DD1001A] text-primary font-bold border border-primary rounded-xl"
+        >
+          <h4>Bus</h4>
+          <img class="lg:w-8" src="images/bus-icon.png" alt="Bus Icon" />
+        </div>
+        <div class="block lg:hidden text-3xl">
+          <i id="bar-icon" class="block lg:block fa-solid fa-bars"></i>
+          <i id="cross-icon" class="hidden fa-solid fa-xmark"></i>
+        </div>
+        <div
+          id="nav-menu"
+          class="hidden lg:hidden absolute top-24 w-11/12 mx-auto bg-[#E2E8F0] py-12 rounded-xl"
+        >
+          <ul class="text-2xl font-semibold text-center">
+            <li class="hover:text-primary mb-4">Home</li>
+            <li class="hover:text-primary mb-4">About</li>
+            <li class="hover:text-primary mb-4">Destination</li>
+            <li class="hover:text-primary">Search</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer>
+      <div></div>
+    </footer>
+    <!-- Link External JavaScript File -->
+    <script src="nav.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
