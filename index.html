@@ -35,10 +35,10 @@
         font-family: "Raleway", sans-serif;*/
       .bg-banner-img {
         background-image: url("images/banner.png");
-        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.3);
         background-position: center;
         background-size: cover;
-        background-color: rgba(0, 0, 0, 0.5);
+
         background-blend-mode: overlay;
       }
     </style>
@@ -65,7 +65,7 @@
     </script>
   </head>
   <body class="font-Raleway">
-    <header class="w-11/12 lg:w-4/5 mx-auto mt-10">
+    <header class="w-11/12 lg:w-4/5 mx-auto mt-10 mb-14">
       <nav class="flex justify-between items-center">
         <div>
           <h2 class="text-2xl lg:text-3xl font-extrabold">Bus-Ticket</h2>
@@ -104,7 +104,7 @@
       </nav>
       <!-- Banner Section Code Start Here -->
       <section
-        class="bg-banner-img rounded-xl mt-6 flex flex-col justify-center items-center py-32 text-center"
+        class="w-max-h-max relative bg-banner-img bg-no-repeat rounded-3xl mt-6 flex flex-col justify-center items-center py-36 text-center"
       >
         <h1
           class="lg:w-6/12 text-white text-4xl lg:text-5xl font-extrabold leading-loose mb-5"
@@ -126,6 +126,41 @@
         >
       </section>
       <!-- Banner Section Code End Here -->
+      <!--Mini Card Section Code Start Here-->
+      <section
+        class="w-11/12 lg:w-4/6 mx-auto lg:absolute lg:bottom-[-70px] lg:left-[309px] flex flex-col lg:flex-row lg:items-center gap-5 pb-10 mt-8"
+      >
+        <div
+          class="w-full lg:w-64 flex justify-center items-center gap-5 py-5 shadow-2xl border-b-2 border-primary rounded-2xl font-Inter bg-white mb-4"
+        >
+          <div><img src="images/people.png" alt="people icon" /></div>
+          <div>
+            <h4 class="text-2xl font-bold">500K+</h4>
+            <p class="text-lg font-normal">Registered users</p>
+          </div>
+        </div>
+
+        <div
+          class="w-full lg:w-64 flex justify-center items-center gap-5 py-5 shadow-2xl border-b-2 border-primary rounded-2xl font-Inter bg-white mb-4"
+        >
+          <div><img src="images/ticket-cupon.png" alt="people icon" /></div>
+          <div>
+            <h4 class="text-2xl font-bold">1.7 lacks</h4>
+            <p class="text-lg font-normal">Tickets sold</p>
+          </div>
+        </div>
+
+        <div
+          class="w-full lg:w-64 flex justify-center items-center gap-5 py-5 shadow-2xl border-b-2 border-primary rounded-2xl font-Inter bg-white"
+        >
+          <div><img src="images/ticket-cupon.png" alt="people icon" /></div>
+          <div>
+            <h4 class="text-2xl font-bold">80K+</h4>
+            <p class="text-lg font-normal">Rental partners</p>
+          </div>
+        </div>
+      </section>
+      <!--Mini Card Section Code End Here-->
     </header>
     <main></main>
     <footer>
