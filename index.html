@@ -51,7 +51,7 @@
               couponOne: "#ffbf0f",
               couponTwo: "#f78c9c",
               MobileMenu: "#f7f8f8",
-              body: "#03071299",
+              body: "#F7F8F8",
               buttonColor: "rgba(29, 209, 0, 0.15)",
             },
           },
@@ -152,7 +152,7 @@
         <div
           class="w-full lg:w-64 flex justify-center items-center gap-5 py-5 shadow-2xl border-b-2 border-primary rounded-2xl font-Inter bg-white"
         >
-          <div><img src="images/ticket-cupon.png" alt="people icon" /></div>
+          <div><img src="images/stoppage.png" alt="people icon" /></div>
           <div>
             <h4 class="text-2xl font-bold">80K+</h4>
             <p class="text-lg font-normal">Rental partners</p>
@@ -161,9 +161,9 @@
       </section>
       <!--Mini Card Section Code End Here-->
     </header>
-    <main class="w-11/12 lg:w-4/5 mx-auto">
+    <main>
       <!-- Best offers Coupon Code Section code Start Here -->
-      <section class="mb-28">
+      <section class="w-11/12 lg:w-4/5 mx-auto mb-28">
         <h2 class="text-4xl font-bold text-secondary text-center mb-12">
           Best offers for you
         </h2>
@@ -237,6 +237,514 @@
         </div>
       </section>
       <!-- Best offers Coupon Code Section code End Here -->
+      <!-- Available Seat Section -->
+      <div>
+        <p
+          class="w-1/6 mx-auto text-center font-bold text-xl mb-10 border-4 border-primary font-Inter"
+        >
+          Available Seats: <span id="available-seat">40</span>
+        </p>
+      </div>
+      <!-- Seat Booking Section Code Start Here -->
+      <section
+        class="w-11/12 mx-auto bg-body p-8 rounded-2xl shadow-sm grid grid-cols-3 gap-5"
+      >
+        <div class="col-span-2">
+          <div>
+            <h2 class="text-2xl font-semibold text-secondary">
+              Select Your Seat
+            </h2>
+          </div>
+          <div class="border-b-2 border-dashed my-4"></div>
+          <div class="flex justify-between items-center">
+            <p>
+              <i class="fa-solid fa-couch"></i>
+              <span>Available</span>
+            </p>
+            <p class="text-primary">
+              <i class="fa-solid fa-couch"></i>
+              <span>Available</span>
+            </p>
+          </div>
+          <div class="border-b-2 border-dashed my-4"></div>
+          <section
+            class="grid grid-cols-12 items-center gap-y-5 mr-20 font-Inter"
+          >
+            <p class="col-span-1"></p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <p class="col-span-8"></p>
+              <button class="btn col-span-2">
+                <img src="images/steering_wheel.png" alt="" />
+              </button>
+            </div>
+
+            <!-- Row 1 -->
+            <p class="col-span-1">A</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                A1
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                A2
+              </button>
+              <p class="col-span-1"></p>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                A3
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                A4
+              </button>
+            </div>
+
+            <!-- Row 2 -->
+            <p class="col-span-1">B</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                B1
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                B2
+              </button>
+              <p class="col-span-1"></p>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                B3
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                B4
+              </button>
+            </div>
+
+            <!-- Row 3 -->
+            <p class="col-span-1">C</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                C1
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                C2
+              </button>
+              <p class="col-span-1"></p>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                C3
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                C4
+              </button>
+            </div>
+
+            <!-- Row 4 -->
+            <p class="col-span-1">D</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                D1
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                D2
+              </button>
+              <p class="col-span-1"></p>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                D3
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                D4
+              </button>
+            </div>
+
+            <!-- Row 5 -->
+            <p class="col-span-1">E</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                E1
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                E2
+              </button>
+              <p class="col-span-1"></p>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                E3
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                E4
+              </button>
+            </div>
+
+            <!-- Row 6 -->
+            <p class="col-span-1">F</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                F1
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                F2
+              </button>
+              <p class="col-span-1"></p>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                F3
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                F4
+              </button>
+            </div>
+
+            <!-- Row 7 -->
+            <p class="col-span-1">G</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                G1
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                G2
+              </button>
+              <p class="col-span-1"></p>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                G3
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                G4
+              </button>
+            </div>
+
+            <!-- Row 8 -->
+            <p class="col-span-1">H</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                H1
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                H2
+              </button>
+              <p class="col-span-1"></p>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                H3
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                H4
+              </button>
+            </div>
+
+            <!-- Row 9 -->
+            <p class="col-span-1">I</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                I1
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                I2
+              </button>
+              <p class="col-span-1"></p>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                I3
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                I4
+              </button>
+            </div>
+
+            <!-- Row 10 -->
+            <p class="col-span-1">J</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                J1
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                J2
+              </button>
+              <p class="col-span-1"></p>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                J3
+              </button>
+              <button
+                onclick="handleSelectSeat(this)"
+                class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                J4
+              </button>
+            </div>
+          </section>
+        </div>
+        <div class="border-l-2 pl-5 border-dashed">
+          <div>
+            <h2 class="text-2xl font-semibold text-secondary">
+              Select Your Seat
+            </h2>
+          </div>
+          <div class="border-b-2 my-4 border-dashed"></div>
+          <section class="font-Inter">
+            <div class="bg-[#f7f8f8 p-8 rounded-xl">
+              <h3 class="flex justify-between items-center">
+                <p>
+                  <span>Seat</span
+                  ><sup
+                    id="total-booked"
+                    class="text-primary font-normal rounded-full text-sm"
+                    >0</sup
+                  >
+                </p>
+                <p>Class</p>
+                <p>Price</p>
+              </h3>
+              <div class="border-b-2 my-4 border-dashed"></div>
+              <ul id="selected-seat" class="space-y-5">
+                <h3
+                  id="worning-text"
+                  class="text-3xl font-semibold text-error capitalize text-center"
+                >
+                  No Seat Booked
+                </h3>
+              </ul>
+              <div class="border-b-2 my-4 border-dashed"></div>
+              <div class="text-lg font-semibold flex justify-between">
+                <p>Total Price</p>
+                <p><span>BDT: </span> <span id="total-price">****</span></p>
+              </div>
+              <div class="border-b-2 my-4 border-dashed"></div>
+              <div
+                id="show-coupon-pric"
+                class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between"
+              >
+                <input
+                  id="coupon-field"
+                  type="text"
+                  disabled
+                  class="input my-5 w-full input-primary border-primary"
+                  placeholder="have a coupon code"
+                />
+                <button id="coupon-btn" class="btn bg-primary" disabled>
+                  Apply
+                </button>
+              </div>
+              <div class="text-lg font-semibold flex justify-between">
+                <p>Grand Price</p>
+                <p><span>BDT: </span> <span id="grand-total">****</span></p>
+              </div>
+            </div>
+
+            <!-- Form Section -->
+            <div class="my-5">
+              <label class="form-control w-full my-3">
+                <div class="label">
+                  <span class="label-text font-bold text-base"
+                    >Passenger Name*</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter Passenger Name"
+                  class="input input-bordered w-full"
+                />
+              </label>
+
+              <label class="form-control w-full my-3">
+                <div class="label">
+                  <span class="label-text font-bold text-base">
+                    Passenger Phone Number*</span
+                  >
+                </div>
+                <input
+                  id="phone-number"
+                  type="number"
+                  placeholder="Enter Phone Number"
+                  class="input input-bordered w-full"
+                />
+              </label>
+
+              <label class="form-control w-full my-3">
+                <div class="label">
+                  <span class="label-text font-bold text-base"
+                    >Your Email*</span
+                  >
+                </div>
+                <input
+                  type="email"
+                  placeholder="Enter Passenger Email"
+                  class="input input-bordered w-full"
+                />
+              </label>
+              <button
+                id="new-btn"
+                disabled
+                onclick="my_modal_1.showModal()"
+                class="btn bg-primary mt-5 text-lg text-white uppercase w-full"
+              >
+                Next
+              </button>
+              <!-- modal Section Code -->
+              <!-- Open the modal using ID.showModal() method -->
+              <dialog id="my_modal_1" class="modal">
+                <div
+                  class="modal-box flex flex-col justify-center items-center"
+                >
+                  <img src="images/success.png" alt="" />
+                  <h3 class="text-lg font-bold mt-6">SUCCESS</h3>
+                  <p class="py-4">
+                    Thank you for Booking Our Bus Seats. We are working hard to
+                    find the best service and deals for you. Shortly you will
+                    find a confirmation in your email.
+                  </p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button id="btn-continue" class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+              <div class="flex justify-between mt-5">
+                <a
+                  class="underline font-semibold hover:text-primary transition-colors duration-200 ease-in-out"
+                  href="#"
+                  >Terms and Condition</a
+                >
+                <a
+                  class="underline font-semibold hover:text-primary transition-colors duration-200 ease-in-out"
+                  href="#"
+                  >Cancellation Policy</a
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- Seat Booking Section Code End Here -->
     </main>
     <footer>
       <div></div>
